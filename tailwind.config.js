@@ -6,6 +6,7 @@ module.exports = {
       inter: ["Inter", "sans-serif"],
       "edu-sa": ["Edu SA Beginner", "cursive"],
       mono: ["Roboto Mono", "monospace"],
+      caveat: ["Caveat Brush", "cursive"],
     },
     colors: {
       white: "#fff",
@@ -123,6 +124,14 @@ module.exports = {
         800: "#171717",
         900: "#141414",
       },
+      "gray": {
+        100: "#F2EEE9"
+      },
+      "green": {
+        200: "#C0E4BD",
+        300: "#70C169",
+        400: "#268C43"
+      }
     },
     extend: {
       maxWidth: {
