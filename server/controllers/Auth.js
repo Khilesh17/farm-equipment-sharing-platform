@@ -272,7 +272,7 @@ exports.changePassword = async (req, res) => {
         return res.status(500).json({
             success: false,
             message: "Not able to change Password",
-            error: error.message
+            error: err.message
         })
     }
 }
