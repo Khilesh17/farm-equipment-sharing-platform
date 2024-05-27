@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import OpenRoute from "./components/core/Auth/OpenRoute";
 import Category from "./pages/Category";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -12,10 +14,9 @@ function App() {
       <Header />
 
       <Routes>
-        <Route
-          path="/"
-          element={<Home />}
-        />
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
 
         <Route
           path="/login"

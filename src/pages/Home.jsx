@@ -4,7 +4,7 @@ import CategoryOfEquipment from '../components/core/HomePage/CategoryOfEquipment
 import CardContainer from '../components/core/HomePage/CardContainer';
 import AboutFeatures from '../components/core/HomePage/AboutFeatures';
 import ReviewsSection from '../components/core/HomePage/reviewSection/ReviewsSection';
-import Footer from '../components/common/Footer';
+import Footer from '../components/common/footer/Footer';
 
 const Home = () => {
     return (

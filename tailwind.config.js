@@ -126,7 +126,8 @@ module.exports = {
       },
       "gray": {
         100: "#F2EEE9",
-        200: "#F5F7FA"
+        200: "#F5F7FA",
+        300: "#E5E6D6"
       },
       "green": {
         200: "#C0E4BD",
