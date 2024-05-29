@@ -1,8 +1,15 @@
-import React from 'react'
+import loginImg from "../assets/feeding trough 1.png"
+import Template from "../components/core/Auth/Template"
 
-const Login = () => {
+function Login() {
   return (
-    <div>Login</div>
+    <Template
+      title="Welcome Back"
+      description1="Good to see you Again !"
+      description2="Take Full Advantage of our Application."
+      image={loginImg}
+      formType="login"
+    />
   )
 }
 

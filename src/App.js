@@ -7,6 +7,8 @@ import OpenRoute from "./components/core/Auth/OpenRoute";
 import Category from "./pages/Category";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Cart from "./pages/Cart";
+import PrivateRoute from "./components/core/Auth/PrivateRoute";
 
 function App() {
   return (
@@ -38,9 +40,17 @@ function App() {
 
         <Route
           path="/category/:categoryName"
-          element={<Category/>}
+          element={<Category />}
         />
 
+        <Route
+          path="/cart"
+          element={
+            <PrivateRoute>
+              <Cart />
+            </PrivateRoute>
+          }
+        />
       </Routes>
 
     </div>

@@ -1,8 +1,15 @@
-import React from 'react'
+import signupImg from "../assets/tractor 1.png"
+import Template from "../components/core/Auth/Template"
 
-const Signup = () => {
+function Signup() {
   return (
-    <div>Signup</div>
+    <Template
+      title="Join Farms Share to Start Renting Your Equipments."
+      description1="Make Money by Giving Rent to Your Equipments."
+      description2="Save Money by taking Equipmetns on rent rather than purchasing it."
+      image={signupImg}
+      formType="signup"
+    />
   )
 }
 
