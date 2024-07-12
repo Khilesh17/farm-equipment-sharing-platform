@@ -123,9 +123,11 @@ export function login(email, password, navigate) {
                 image: userImage
             }));
 
+            console.log(response.data);
+
             //Now updating the local storage
-            localStorage.setItem("token", JSON.stringify(response.data.token));
-            localStorage.setItem("userData", JSON.stringify(response.data.user))
+            localStorage.setItem("token", JSON.stringify(response.data.user.token));
+            localStorage.setItem("userData", JSON.stringify(response.data.user));
 
             navigate("/dashboard/my-profile");
         }

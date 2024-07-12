@@ -202,7 +202,6 @@ exports.getRentedEquipments = async (req, res) => {
 exports.getOwnEquipment = async (req, res) => {
     try {
         const userId = req.user.id;
-
         const userDetails = await User.findById(userId).populate({
             path: "equipments",
             populate: {
@@ -222,7 +221,7 @@ exports.getOwnEquipment = async (req, res) => {
 
         return res.status(200).json({
             success: true,
-            ownEquipment: userDetails.equipments
+            data: userDetails.equipments
         })
     }
     catch (err) {

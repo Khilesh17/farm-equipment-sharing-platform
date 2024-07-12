@@ -4,15 +4,13 @@ import indianCities from '../../data/indianCities';
 import Button from './Button';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaCartShopping } from "react-icons/fa6";
-import { useDispatch, useSelector } from 'react-redux';
-import { logout } from '../../services/operations/authAPI';
+import ProfileDropdown from '../core/Auth/ProfileDropdown';
 
 const Header = () => {
 
-    const dispatch = useDispatch();
     const navigate = useNavigate();
     const searchText = useRef("");
-    const userData = useSelector(store => store.auth.userData);
+    const userData = localStorage.getItem("userData");
 
     const changeCityHandler = (event) => {
         console.log(event.target.value);
@@ -68,24 +66,17 @@ const Header = () => {
                 {userData !== null
                     ? (<div className='flex justify-center items-center gap-3'>
                         <button
-                            onClick={() => navigate("/cart")}
+                            onClick={() => navigate("/dashboard/cart")}
                             className='flex justify-center items-center gap-2'
                         >
                             <FaCartShopping /> Cart
                         </button>
-                        <Button
-                            text={"Logout"}
-                            onClickHandler={() => dispatch(logout(navigate))}
-                        />
+                        <ProfileDropdown />
                     </div>)
                     : (<div className='flex justify-center items-center gap-3'>
                         <Button
                             text={"Login"}
                             onClickHandler={() => { navigate("/login") }}
-                        />
-                        <Button
-                            text={"SignUp"}
-                            onClickHandler={() => { navigate("/signup") }}
                         />
                     </div>)
                 }

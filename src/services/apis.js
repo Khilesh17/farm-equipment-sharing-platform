@@ -17,7 +17,6 @@ export const profileEndpoints = {
     GET_USER_DETAILS_API: BASE_URL + "/profile/getUserDetails",
     GET_RENTED_EQUIPMENTS_API: BASE_URL + "/profile/get-rented-equipments",
     GET_OWNED_EQUIPMENTS_API: BASE_URL + "/profile/get-own-equipments",
-    
 }
 
 // Setting Page EndPoint

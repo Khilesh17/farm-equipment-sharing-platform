@@ -7,6 +7,8 @@ module.exports = {
       "edu-sa": ["Edu SA Beginner", "cursive"],
       mono: ["Roboto Mono", "monospace"],
       caveat: ["Caveat Brush", "cursive"],
+      luckiest: ['Luckiest Guy', 'cursive'],
+      montserrat: ['Montserrat', 'sans-serif'],
     },
     colors: {
       white: "#fff",
@@ -133,6 +135,7 @@ module.exports = {
         200: "#C0E4BD",
         300: "#70C169",
         400: "#268C43",
+        500: "#1DB57C",
         700: "#053220",
         800: "#013220",
         900: "#011332"
